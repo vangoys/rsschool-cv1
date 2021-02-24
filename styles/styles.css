@@ -1,0 +1,20 @@
+.myCV {
+    margin: auto;
+    width: 1024px;
+    padding: 5px;
+    display: flex;
+}
+
+.image-cat {
+    width: 248px;
+}
+
+.font
+{
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+p {
+    margin-top: 1em; 
+    margin-bottom: 0em; 
+   }
