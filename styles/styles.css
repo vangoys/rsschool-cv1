@@ -1,20 +1,123 @@
-.myCV {
-    margin: auto;
-    width: 1024px;
-    padding: 5px;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
     display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
-.image-cat {
-    width: 248px;
+nav li {
+    margin: 0 15px;
 }
 
-.font
-{
-    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+nav a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
 }
 
-p {
-    margin-top: 1em; 
-    margin-bottom: 0em; 
-   }
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #3498db;
+}
+
+h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 2.2em;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    color: #2c3e50;
+    margin-top: 25px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+}
+
+.logo {
+    height: 40px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+pre {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 5px 0;
+    }
+    
+    .cv-container {
+        padding: 20px;
+    }
+}
