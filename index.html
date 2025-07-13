@@ -3,43 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rsschool-cv-html</title>
+    <title>Ivan Piskun - CV</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body class="myCV">
-    <main class="font"> 
-        <figure class="image-cat">
-            <img src="image/cat.jpg" alt="foto">
-        </figure>
-        <ol>
-            <li> <b>Ivan Piskun</b></li>
-            <li> <p>Contacts:</p>
-                phone +37529463436
-                <br>email vanpiskun@gmail.com
-            </li>
-            <li>
+<body>
+    <div class="cv-container">
+        <header>
+            <figure>
+                <img src="image/cat.jpg" alt="Ivan Piskun photo" class="photo">
+            </figure>
+            <h1>Ivan Piskun</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="summary">
+                <h2>Summary</h2>
                 <p>I have confident knowledge in Frontend software development and considerable practical skills in coding in JS. I am responsible and fulfilling, and also I have good analytical skills. I am easy to train, patient and very attentive to work.</p>
-            </li>
-            <li> <p>Skills:</p>
-                Programming Languages: HTML, CSS, JS, Swift, C# basics
-                <br>Development Environment: Visual Studio, Xcode
-                <br>Version Control Systems: Git
-                </li>
-            <li>
-              <p>My github <a href=https://github.com/vangoys>https://github.com/vangoys</a></p>  
-            </li>
-            <li>
-                <p>I don’t have experience as Frontend developer</p>
-            </li>
-            <li>
-                <p>Education:</p>
-                06/07/2018 – 07/09/2018 – Educational Center of HTP Course: iOS Developer
-                <br>01/08/2009 – 27/06/2016 – Belarusian State University Specialization: Computer Science (web programming and computer design)
-            </li> 
-            <li>
-                <p>English Proficiency:Intermediate</p>
-            </li>  
-        </ol>
-    </main>
+            </section>
+
+            <section>
+                <h2>Contacts</h2>
+                <ul>
+                    <li>Phone: +375291321139</li>
+                    <li>Email: <a href="mailto:vanpiskun@gmail.com">vanpiskun@gmail.com</a></li>
+                    <li>GitHub: <a href="https://github.com/vangoys" target="_blank">github.com/vangoys</a></li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming Languages: HTML, CSS, JavaScript, Swift, C# basics</li>
+                    <li>Development Environments: Visual Studio, Xcode, VS Code</li>
+                    <li>Version Control: Git, GitHub</li>
+                    <li>Frameworks/Libraries: React (basic knowledge)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Code Example</h2>
+                <pre><code>function calculateFactorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    }
+    return n * calculateFactorial(n - 1);
+}
+
+console.log(calculateFactorial(5)); // Output: 120</code></pre>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/vangoys/calculator-app" target="_blank">Calculator App</a> - Simple calculator built with HTML, CSS and JavaScript
+                    </li>
+                    <li>
+                        <a href="https://github.com/vangoys/weather-widget" target="_blank">Weather Widget</a> - Weather application using API calls
+                    </li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>06/2018 – 09/2018 - iOS Developer Course, Educational Center of HTP</li>
+                    <li>08/2009 – 06/2016 - Computer Science (Web Programming and Computer Design), Belarusian State University</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>English Proficiency</h2>
+                <p>Intermediate (B1) - can read technical documentation and communicate on work-related topics</p>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <a href="https://github.com/vangoys" target="_blank" rel="noopener noreferrer">My GitHub</a>
+                <span> • 2025</span>
+            </div>
+            <div style="margin-top: 15px;">
+                <a href="https://rs.school/courses/javascript-ru" target="_blank" rel="noopener noreferrer">
+                    <img src="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/rs-school-logo.svg" 
+                         alt="RS School logo" 
+                         class="logo">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
